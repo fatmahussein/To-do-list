@@ -1,6 +1,43 @@
-.hello {
-    color: red;
-  }
-  body {
-    background-color: bisque;
+.container {
+  width: 30%;
+  background-color: #fff;
+  margin: 10% auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+body {
+  background: rgb(198, 195, 195);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  border-bottom: 1.8px solid rgb(174, 167, 167);
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+th {
+  display: flex;
+}
+
+.td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.align {
+  text-align: left;
+}
+
+tfoot tr td {
+  height: 35px;
+  text-align: center;
+  background-color: rgb(128, 126, 126);
 }
