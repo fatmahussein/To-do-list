@@ -1,6 +1,47 @@
-.hello {
-    color: red;
-  }
-  body {
-    background-color: bisque;
+.container {
+  width: 30%;
+  background-color: #fff;
+  margin: 6% auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+body {
+  background: rgb(250, 249, 249);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  border-bottom: 1.8px solid rgb(219, 217, 217);
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+th {
+  display: flex;
+}
+
+.td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align {
+  margin-left: -61px;
+  width: 63%;
+}
+
+tfoot tr td {
+  height: 35px;
+  text-align: center;
+  background: rgb(208, 207, 207);
+  color: gray;
 }
