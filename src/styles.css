@@ -1,13 +1,13 @@
 .container {
   width: 30%;
   background-color: #fff;
-  margin: 10% auto;
+  margin: 6% auto;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
 body {
-  background: rgb(198, 195, 195);
+  background: rgb(250, 249, 249);
 }
 
 table {
@@ -15,11 +15,12 @@ table {
 }
 
 tbody tr {
-  border-bottom: 1.8px solid rgb(174, 167, 167);
+  border-bottom: 1.8px solid rgb(219, 217, 217);
   height: 35px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  align-items: center;
 }
 
 th {
@@ -30,14 +31,17 @@ th {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .align {
-  text-align: left;
+  margin-left: -61px;
+  width: 63%;
 }
 
 tfoot tr td {
   height: 35px;
   text-align: center;
-  background-color: rgb(128, 126, 126);
+  background: rgb(208, 207, 207);
+  color: gray;
 }

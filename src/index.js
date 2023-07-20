@@ -3,18 +3,18 @@ import './styles.css';
 const tasksArray = [
   {
     description: 'Wash the dishes',
-    completed: 'no',
-    index: '3',
+    completed: false,
+    index: 3,
   },
   {
     description: 'Complete To Do List project',
-    completed: 'no',
-    index: '2',
+    completed: false,
+    index: 2,
   },
   {
     description: 'Complete Microverse exercises',
-    completed: 'no',
-    index: '1',
+    completed: false,
+    index: 1,
   },
 ];
 
@@ -29,9 +29,9 @@ tasksArray.forEach((task) => {
   td2.appendChild(input);
   tr2.appendChild(td2);
   const td3 = document.createElement('td');
+  td3.classList.add('align');
   const label = document.createElement('label');
   label.textContent = task.description;
-  label.classList.add('align');
   td3.appendChild(label);
   const td4 = document.createElement('td');
   td4.innerHTML = `<i class='fa-solid fa-ellipsis-vertical'>
