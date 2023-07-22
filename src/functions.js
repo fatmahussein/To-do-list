@@ -22,6 +22,7 @@ export function displayTasks() {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = item.completed;
+    checkbox.setAttribute('data-index', index);
     checkbox.addEventListener('change', () => {
       updateStatus(tasksArray, index, checkbox.checked);
     });
