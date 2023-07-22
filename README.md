@@ -116,7 +116,7 @@ You can deploy this project using:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! [https://github.com/fatmahussein/To-do-list/issues/4](https://github.com/fatmahussein/To-do-list/issues)
+Contributions, issues, and feature requests are welcome! [issues](https://github.com/fatmahussein/To-do-list/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
