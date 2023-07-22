@@ -12,7 +12,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,10 +48,6 @@ This is a To-Do-List project.
 - **Changing design template to code**
 - **Interacting with the DOM**
 - **Working with webpack**
-
-## 🚀 Live Demo <a name="live-demo"></a>
-**Live link will be dropped soon**
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -121,7 +116,7 @@ You can deploy this project using:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome! [https://github.com/fatmahussein/To-do-list/issues/4](https://github.com/fatmahussein/To-do-list/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 

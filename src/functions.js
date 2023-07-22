@@ -1,3 +1,5 @@
+import updateStatus from '../modules/status-update.js';
+
 let tasksArray = [];
 
 export function updateTaskIndexes() {
@@ -15,16 +17,14 @@ export function displayTasks() {
   const listItem = document.querySelector('.list-items');
   listItem.innerHTML = '';
 
-  tasksArray.forEach((item) => {
+  tasksArray.forEach((item, index) => {
     const li = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = item.completed;
+    checkbox.setAttribute('data-index', index);
     checkbox.addEventListener('change', () => {
-      item.completed = checkbox.checked;
-      updateTaskIndexes();
-      addtoLocalStorage();
-      displayTasks();
+      updateStatus(tasksArray, index, checkbox.checked, addtoLocalStorage, displayTasks);
     });
 
     const value = document.createElement('label');
