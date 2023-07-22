@@ -1,7 +1,6 @@
-/* eslint-disable import/no-cycle */
-import { addtoLocalStorage, displayTasks } from '../src/functions.js';
-
-export default function updateStatus(tasksArray, index, completed) {
+export default function updateStatus(
+  tasksArray, index, completed, addtoLocalStorage, displayTasks,
+) {
   tasksArray[index].completed = completed;
 
   addtoLocalStorage();

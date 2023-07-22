@@ -1,4 +1,3 @@
-/* eslint-disable import/no-cycle */
 import updateStatus from '../modules/status-update.js';
 
 let tasksArray = [];
@@ -25,7 +24,7 @@ export function displayTasks() {
     checkbox.checked = item.completed;
     checkbox.setAttribute('data-index', index);
     checkbox.addEventListener('change', () => {
-      updateStatus(tasksArray, index, checkbox.checked);
+      updateStatus(tasksArray, index, checkbox.checked, addtoLocalStorage, displayTasks);
     });
 
     const value = document.createElement('label');
