@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 import './styles.css';
+import { handleStatusUpdate, clearCompletedTasks } from '../modules/taskUpdates.js';
 
 let tasksArray = [];
 
@@ -35,11 +36,10 @@ function displayTasks() {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = item.completed;
+
+    // Add an event listener to the checkbox to handle status updates
     checkbox.addEventListener('change', () => {
-      item.completed = checkbox.checked;
-      updateTaskIndexes();
-      addtoLocalStorage();
-      displayTasks();
+      handleStatusUpdate(item, checkbox); // Call the handleStatusUpdate function
     });
 
     const value = document.createElement('label');
@@ -89,19 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Add an event listener to the "Clear all completed" button
+  const clearCompletedButton = document.querySelector('.clear-completed');
+  clearCompletedButton.addEventListener('click', () => {
+    clearCompletedTasks(); // Call the clearCompletedTasks function
+  });
+
   displayTasks();
 });
-
-function deleteTask() {
-  const clear = document.querySelector('.clear-completed');
-  clear.addEventListener('click', () => {
-    tasksArray = tasksArray.filter((n) => !n.completed);
-    updateTaskIndexes();
-    addtoLocalStorage();
-    displayTasks();
-  });
-}
-deleteTask();
 
 function addtoLocalStorage() {
   localStorage.setItem('data', JSON.stringify(tasksArray));
