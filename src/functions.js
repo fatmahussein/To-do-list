@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import updateStatus from '../modules/status-update.js';
 
 let tasksArray = [];
