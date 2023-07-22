@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,6 +50,8 @@ This is a To-Do-List project.
 - **Interacting with the DOM**
 - **Working with webpack**
 
+ ### Live Demo <a name="live-demo"></a>
+[Live Demo](https://fatmahussein.github.io/To-do-list/dist/index.html)
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
