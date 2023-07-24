@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(78, 57, 57);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 330px;
+  height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.first h1 {
+  font-size: 20px;
+}
+
+.first span {
+  cursor: pointer;
+}
+
+.first span .refresh:hover {
+  animation: rotate 2s ease-in alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+form {
+  display: flex;
+  padding: 0 20px;
+}
+
+form input {
+  border: none;
+  font-style: italic;
+  width: 310px;
+  font-size: 15px;
+  padding: 8px;
+  outline: none;
+}
+
+form button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.clr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 211, 211);
+  width: 100%;
+  height: 50px;
+}
+
+ul li button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.clr button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li label {
+  width: 240px;
+}
