@@ -27,11 +27,11 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 To Do List <a name="about-project"></a>
 
 This is a To-Do-List project.
 
-**[Awesome Books]** is a HTML CSS and JS project
+**[To Do Lists]** is a HTML CSS and JS project
 
 ## 🛠 Built With <a name="built-with"></a>
 
